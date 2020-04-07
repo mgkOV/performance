@@ -1,20 +1,38 @@
 {
-  "name": "homework6",
+  "name": "perf",
   "version": "1.0.0",
-  "description": "Оптимизировать страницу, выложить результат на [Github-Pages](https://help.github.com/en/articles/creating-a-github-pages-site) и проверить его на [shri-perf.ru](https://shri-perf.ru), отправив адрес вашей страницы.",
-  "main": "index.js",
+  "description": "",
+  "private": true,
   "scripts": {
+    "build": "cross-env NODE_ENV=production  gulp build",
+    "dev": "cross-env NODE_ENV=development gulp watch",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mgkOV/performance.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mgkOV/performance/issues"
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "autoprefixer": "^9.7.3",
+    "babel-loader": "^8.0.6",
+    "browser-sync": "^2.26.7",
+    "cross-env": "^6.0.3",
+    "cssnano": "^4.1.10",
+    "del": "^5.1.0",
+    "grunt-postcss": "^0.9.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-hash-filename": "^2.0.1",
+    "gulp-hb": "^8.0.0",
+    "gulp-if": "^3.0.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-uglify": "^3.0.2",
+    "postcss-import": "^12.0.1",
+    "postcss-normalize": "^8.0.1",
+    "postcss-simple-vars": "^5.0.2",
+    "webpack": "^4.41.4"
   },
-  "homepage": "https://github.com/mgkOV/performance#readme"
+  "dependencies": {}
 }
