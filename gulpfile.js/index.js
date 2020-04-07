@@ -5,5 +5,5 @@ const html = require("./tasks/html");
 const javascript = require("./tasks/javascript");
 
 module.exports = {
-  build: gulp.series(javascript, html)
+  build: gulp.series(javascript, html, css)
 };

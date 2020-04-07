@@ -23,6 +23,7 @@
     "grunt-postcss": "^0.9.0",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
     "gulp-hash-filename": "^2.0.1",
     "gulp-hb": "^8.0.0",
     "gulp-if": "^3.0.0",
