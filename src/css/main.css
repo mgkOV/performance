@@ -206,6 +206,10 @@ header {
   padding: 0 40px;
 }
 
+.purchase-list-wrap {
+  display: none;
+}
+
 .purchase-list-wrap .card-description {
   padding-bottom: 12px;
 }
