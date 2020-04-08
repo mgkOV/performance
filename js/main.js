@@ -14,9 +14,10 @@
     });
     return t[e].call(n.exports, n, n.exports, o), (n.l = !0), n.exports;
   }
-  // console.dir(t[271]);
+  console.dir(t[27]);
   // console.log(t.length);
-  (o.m = t), (o.c = i), (o.p = "//an.yandex.ru/partner-code-bundles/6187/"), o((o.s = 271));
+  (o.m = t), (o.c = i), (o.p = "//an.yandex.ru/partner-code-bundles/6187/"), o((o.s = 27));
+  // (o.m = t), (o.c = i), (o.p = "//an.yandex.ru/partner-code-bundles/6187/"), o((o.s = 271));
 })([
   function (t, e, i) {
     "use strict";
