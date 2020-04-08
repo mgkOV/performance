@@ -13,7 +13,9 @@ function watch() {
     port: 5000
   });
 
-  gulp.watch("./src/**/*.js", { ignoreInitial: false }, javascript);
+  gulp
+    .watch("./src/**/*.js", { ignoreInitial: false }, javascript)
+    .on("change", browserSync.reload);
 }
 
 module.exports = {
