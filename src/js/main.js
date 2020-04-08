@@ -1,13 +1,6 @@
 "use strict";
 
 !(function (t) {
-  var e = window["pcodeJsonp6187"];
-  window["pcodeJsonp6187"] = function (i, o, r) {
-    for (var a, s, l = 0, p = []; l < i.length; l++)
-      (s = i[l]), n[s] && p.push(n[s][0]), (n[s] = 0);
-    for (a in o) Object.prototype.hasOwnProperty.call(o, a) && (t[a] = o[a]);
-    for (e && e(i, o, r); p.length; ) p.shift()();
-  };
   var i = {},
     n = {
       2: 0
