@@ -14465,10 +14465,8 @@
       /\/context_static_[\d\w]+\.js$|\/partner-code-bundles\/\d+\/\w+\.js$/i.test(t.filename) &&
         n.logger.error(t, "UncaughtError");
     }),
-      window.Promise || (window.Promise = i(328)),
-      document.createElement("YATAG"),
-      i(332),
-      i(333);
+      document.createElement("YATAG");
+
     try {
       i(334);
       var l = i(2),
