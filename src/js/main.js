@@ -1,13 +1,13 @@
 "use strict";
 
 $(document).ready(function () {
-  $(".card").each(function (e) {
-    if ($(this).hasClass("card_size_s")) {
-      $(this).css({ "border-radius": "22px" });
-    } else {
-      $(this).css({ "border-radius": "23px" });
-    }
-  });
+  // $(".card").each(function (e) {
+  //   if ($(this).hasClass("card_size_s")) {
+  //     $(this).css({ "border-radius": "22px" });
+  //   } else {
+  //     $(this).css({ "border-radius": "23px" });
+  //   }
+  // });
 
   var carousel = $("#carousel");
   carousel.owlCarousel();
@@ -48,9 +48,16 @@ $(document).ready(function () {
     buttonsContainer.style.display = "none";
   };
 
-  document
-    .getElementsByClassName("header-menu__switcher")[0]
-    .addEventListener("click", function () {
-      document.getElementsByClassName("header-menu")[0].classList.toggle("header-menu_active");
-    });
+  const switcher = document.querySelector(".header-menu__switcher");
+  const headerMemu = document.querySelector(".header-menu");
+
+  switcher.onclick = () => {
+    headerMemu.classList.toggle("header-menu_active");
+  };
+
+  // document
+  //   .getElementsByClassName("header-menu__switcher")[0]
+  //   .addEventListener("click", function () {
+  //     document.getElementsByClassName("header-menu")[0].classList.toggle("header-menu_active");
+  //   });
 });

@@ -1,27 +1,13 @@
 "use strict";
 
 $(document).ready(function () {
-  $(".card").each(function (e) {
-    if ($(this).hasClass("card_size_s")) {
-      $(this).css({ "border-radius": "22px" });
-    } else {
-      $(this).css({ "border-radius": "23px" });
-    }
-  });
-
-  // var waterContainer = document.querySelector(".card.card_size_s:last-child");
-
-  // waterContainer.innerHTML =
-  //   '<div class="card-heading">' +
-  //   '<div class="card-icon-wrap">' +
-  //   '<img class="card-icon" src="img/kettle.svg">' +
-  //   "</div>" +
-  //   '<h3 class="card-title">Вода вскипела</h3>' +
-  //   " </div>" +
-  //   '<div class="card-specs">' +
-  //   '<p class="card-source">Чайник</p>' +
-  //   '<p class="card-time card-time_block">16:20, Сегодня</p>' +
-  //   "</div>";
+  // $(".card").each(function (e) {
+  //   if ($(this).hasClass("card_size_s")) {
+  //     $(this).css({ "border-radius": "22px" });
+  //   } else {
+  //     $(this).css({ "border-radius": "23px" });
+  //   }
+  // });
 
   var carousel = $("#carousel");
   carousel.owlCarousel();
@@ -62,9 +48,16 @@ $(document).ready(function () {
     buttonsContainer.style.display = "none";
   };
 
-  document
-    .getElementsByClassName("header-menu__switcher")[0]
-    .addEventListener("click", function () {
-      document.getElementsByClassName("header-menu")[0].classList.toggle("header-menu_active");
-    });
+  const switcher = document.querySelector(".header-menu__switcher");
+  const headerMemu = document.querySelector(".header-menu");
+
+  switcher.onclick = () => {
+    headerMemu.classList.toggle("header-menu_active");
+  };
+
+  // document
+  //   .getElementsByClassName("header-menu__switcher")[0]
+  //   .addEventListener("click", function () {
+  //     document.getElementsByClassName("header-menu")[0].classList.toggle("header-menu_active");
+  //   });
 });
