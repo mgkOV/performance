@@ -14456,27 +14456,23 @@
   },
   function (t, e, i) {
     "use strict";
-    var n = i(8),
-      o = i(77),
-      r = i(38),
-      a = Number(new Date()),
-      s = void 0;
-    (0, o.on)(window, "error", function (t) {
-      /\/context_static_[\d\w]+\.js$|\/partner-code-bundles\/\d+\/\w+\.js$/i.test(t.filename) &&
-        n.logger.error(t, "UncaughtError");
-    }),
-      document.createElement("YATAG");
+    // var n = i(8),
+    var o = i(77);
+    // r = i(38),
+    // a = Number(new Date()),
+    // s = void 0;
+    (0, o.on)(window, "error", function (t) {}), document.createElement("YATAG");
 
-    try {
-      i(334);
-      var l = i(2),
-        p = i(3),
-        c = i(358);
+    // try {
+    //   i(334);
+    //   var l = i(2),
+    //     p = i(3),
+    //     c = i(358);
 
-      Ya.Context._init(), (0, r.setContextStaticExecutionTime)(a, s);
-    } catch (t) {
-      n.logger.error(t, "InitializationFailed");
-    }
+    //   Ya.Context._init(), (0, r.setContextStaticExecutionTime)(a, s);
+    // } catch (t) {
+    //   n.logger.error(t, "InitializationFailed");
+    // }
   },
   function (t, e, i) {
     "use strict";
