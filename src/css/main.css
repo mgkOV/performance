@@ -326,11 +326,11 @@ section {
   display: block;
 }
 
-@font-face {
+/* @font-face {
   font-family: OpenSansReg;
   src: url("../assets/OpenSans-Regular.ttf");
   font-weight: bold;
-}
+} */
 
 @font-face {
   font-family: OpenSansLight;
@@ -621,10 +621,10 @@ footer {
   width: 1016px;
   margin: 0 auto;
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 400;
   height: 107px;
   line-height: 104px;
-  font-family: OpenSansReg;
+  font-family: "Open Sans";
 }
 
 .card_size_s {
