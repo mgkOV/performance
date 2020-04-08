@@ -334,7 +334,7 @@ section {
 
 @font-face {
   font-family: OpenSansLight;
-  src: url("../assets/OpenSans-Light.ttf");
+  src: url("../assets/OpenSans-Light.woff2");
 }
 
 body {
