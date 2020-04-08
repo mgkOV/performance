@@ -18235,88 +18235,8 @@
     e["default"] = function (t, e, i, a) {
       return n["default"](o, r, t, e, i, a);
     };
-  },
-  function (t, e, i) {
-    "use strict";
-    e.__esModule = !0;
-    var n = i(33),
-      o = i(374),
-      r = "1x1",
-      a = {
-        defaultSize: r,
-        allSizes: [r]
-      };
-    function s(t) {
-      return {
-        defaultSize: t[0],
-        allSizes: t.slice(0)
-      };
-    }
-    function l(t, e) {
-      var i = [];
-      return (
-        n(t, function (t) {
-          var n = o["default"](t);
-          null !== n && n.width <= e.width && n.height <= e.height && i.push(t);
-        }),
-        i.length ? i : [r]
-      );
-    }
-    function p(t, e) {
-      var i = o["default"](t),
-        n = o["default"](e);
-      return null !== i && null !== n ? (i.width * i.height > n.width * n.height ? -1 : 1) : 0;
-    }
-    e["default"] = function (t, e, i, n, r, c) {
-      var d = o["default"](i),
-        u = t.slice(0).sort(p);
-      return null !== d
-        ? s(l(u, d))
-        : (function (t, e) {
-            return t.hasOwnProperty(e);
-          })(e, i)
-        ? (c ||
-            (c = (function (t, e, i, n) {
-              var o = t[e],
-                r = Math.min(o.layout[0], i),
-                a = Math.min(i / r, o.layout[1]);
-              return (o.area / (n / r)) * a;
-            })(e, i, n, r)),
-          s(
-            l(u, {
-              width: r,
-              height: c
-            })
-          ))
-        : a;
-    };
-  },
-  function (t, e, i) {
-    "use strict";
-    (e.__esModule = !0),
-      (e["default"] = function (t) {
-        try {
-          var e = t.match(/(\d+)x(\d+)/);
-          return e
-            ? {
-                width: Number(e[1]),
-                height: Number(e[2])
-              }
-            : null;
-        } catch (t) {
-          return null;
-        }
-      });
   }
 ]);
-
-$(".card").each(function (e) {
-  if ($(this).hasClass("card_size_s")) {
-    $(this).css({ "border-radius": "22px" });
-  } else {
-    $(this).css({ "border-radius": "54px" });
-  }
-});
 
 document.addEventListener("DOMContentLoaded", function () {
   $(".card").each(function (e) {
