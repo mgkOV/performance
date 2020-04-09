@@ -728,6 +728,11 @@ footer {
   .critical-cam {
     background: url(../img/cam-s.jpg);
   }
+
+  .card,
+  .description_critical {
+    background: url("../img/cbg-s.jpg");
+  }
 }
 
 @media (max-width: 1030px) {
