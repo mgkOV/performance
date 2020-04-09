@@ -18,6 +18,8 @@ function watch() {
     .watch("./src/**/*.js", { ignoreInitial: false }, javascript)
     .on("change", browserSync.reload);
 
+  gulp.watch("./src/**/*.css", { ignoreInitial: false }, css).on("change", browserSync.reload);
+
   gulp.watch("./src/index.html", { ignoreInitial: false }, html).on("change", browserSync.reload);
 }
 
