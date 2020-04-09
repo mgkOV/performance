@@ -1,6 +1,6 @@
 "use strict";
 
-window.addEventListener("DOMContentLoaded", function () {
+window.addEventListener("DOMContentLoaded", () => {
   const buttonsContainer = document.querySelector(".buttons-wrap");
 
   buttonsContainer.innerHTML =
