@@ -188,8 +188,10 @@ tr {
 }
 
 @font-face {
-  font-family: OpenSansLight;
-  src: url("../assets/OpenSans-Light.woff2");
+  font-family: "Open Sans Light";
+  src: url("../assets/subset-OpenSans-Light.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
@@ -516,7 +518,7 @@ footer {
   font-weight: 700;
   padding-left: 18px;
   line-height: 27px;
-  font-family: OpenSansLight;
+  font-family: "Open Sans Light";
 }
 
 .card-specs {
