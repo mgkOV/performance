@@ -949,6 +949,7 @@ footer {
 
   .critical-cam {
     height: 177px;
+    background: url(../img/cam-s.jpg);
   }
 
   .footer-menu {

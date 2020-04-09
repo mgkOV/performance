@@ -24,6 +24,6 @@ function watch() {
 }
 
 module.exports = {
-  build: gulp.series(javascript, html, css, svg),
+  build: gulp.series(javascript, html, css),
   watch
 };
