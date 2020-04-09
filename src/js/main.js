@@ -1,6 +1,6 @@
 "use strict";
 
-$(document).ready(function () {
+window.addEventListener("DOMContentLoaded", function () {
   // var carousel = $("#carousel");
   // carousel.owlCarousel();
 
