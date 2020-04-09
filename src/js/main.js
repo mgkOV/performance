@@ -1,8 +1,8 @@
 "use strict";
 
 $(document).ready(function () {
-  var carousel = $("#carousel");
-  carousel.owlCarousel();
+  // var carousel = $("#carousel");
+  // carousel.owlCarousel();
 
   const buttonsContainer = document.querySelector(".buttons-wrap");
 
