@@ -330,12 +330,6 @@ section {
   display: block;
 }
 
-/* @font-face {
-  font-family: OpenSansReg;
-  src: url("../assets/OpenSans-Regular.ttf");
-  font-weight: bold;
-} */
-
 @font-face {
   font-family: OpenSansLight;
   src: url("../assets/OpenSans-Light.woff2");
@@ -348,19 +342,6 @@ body {
 ol,
 ul {
   list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:after,
-blockquote:before,
-q:after,
-q:before {
-  content: "";
-  content: none;
 }
 
 table {
@@ -647,11 +628,6 @@ footer {
   grid-row: span 3;
 }
 
-.card_size_c {
-  grid-column: span 3;
-  grid-row: span 2;
-}
-
 .card {
   background: url("../img/cbg.jpg");
   color: #333;
@@ -895,93 +871,6 @@ html {
   overflow: scroll;
 }
 
-.video-wrapper {
-  min-height: 300px;
-  position: relative;
-}
-
-.video {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 300px;
-  transition: all 0.5s ease;
-  z-index: 1;
-  -webkit-filter: brightness(100%) contrast(100%);
-  filter: brightness(100%) contrast(100%);
-}
-
-.video_active {
-  z-index: 10;
-  background: #000;
-}
-
-.video-controls-wrap {
-  box-sizing: border-box;
-  padding: 40px;
-  display: block;
-  width: 100%;
-}
-
-.video-controls {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 0;
-  background: rgba(255, 255, 255, 0.9);
-  z-index: 20;
-  overflow: hidden;
-  transition: height 0.5s ease;
-}
-
-.video-controls_active {
-  height: 92px;
-}
-
-.controls-text {
-  float: left;
-}
-
-.video-control {
-  float: left;
-}
-
-.video-volume {
-  background: url(../img/sound_n.png);
-  background-size: cover;
-  height: 40px;
-  width: 40px;
-  margin-left: 40px;
-  cursor: pointer;
-}
-
-.video-volume_unmuted {
-  background: green;
-  background: url(../img/sound.png);
-  background-size: cover;
-}
-
-.analyser {
-  position: absolute;
-  z-index: 5;
-  width: 30px;
-  height: 0;
-  bottom: 40px;
-  right: 0;
-  background: green;
-  transition: height 0.5s ease;
-}
-
-.analyser_active {
-  position: fixed;
-  z-index: 15;
-  bottom: 40px;
-  right: 40px;
-  width: 60px;
-}
-
 @media (max-width: 1230px) {
   .card_size_m {
     grid-column: span 4;
@@ -1219,24 +1108,8 @@ html {
   .footer-menu {
     padding-left: 20px;
   }
-
-  .card-video {
-    overflow: visible;
-  }
-
-  .video-control {
-    margin-right: 100px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-  }
 }
 
-/* 
- * 	Core Owl Carousel CSS File
- *	v1.3.3
- */
-
-/* clearfix */
 .owl-carousel .owl-wrapper:after {
   content: ".";
   display: block;
@@ -1245,7 +1118,7 @@ html {
   line-height: 0;
   height: 0;
 }
-/* display none until init */
+
 .owl-carousel {
   display: none;
   position: relative;
@@ -1262,21 +1135,11 @@ html {
   position: relative;
   width: 100%;
 }
-.owl-carousel .owl-wrapper-outer.autoHeight {
-  -webkit-transition: height 500ms ease-in-out;
-  -moz-transition: height 500ms ease-in-out;
-  -ms-transition: height 500ms ease-in-out;
-  -o-transition: height 500ms ease-in-out;
-  transition: height 500ms ease-in-out;
-}
 
 .owl-carousel .owl-item {
   float: left;
 }
-.owl-controls .owl-page,
-.owl-controls .owl-buttons div {
-  cursor: pointer;
-}
+
 .owl-controls {
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -1286,12 +1149,6 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-/* mouse grab icon */
-.grabbing {
-  cursor: url(grabbing.png) 8 8, move;
-}
-
-/* fix */
 .owl-carousel .owl-wrapper,
 .owl-carousel .owl-item {
   -webkit-backface-visibility: hidden;
