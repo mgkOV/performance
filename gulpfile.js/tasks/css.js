@@ -12,7 +12,7 @@ function css() {
   return (
     gulp
       .src("./src/css/*.css")
-      .pipe(cleanCSS({ level: 1 }))
+      .pipe(cleanCSS({ level: 2 }))
       // .pipe(gcmq())
       .pipe(gulp.dest(`./css`))
   );
