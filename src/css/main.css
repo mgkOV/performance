@@ -1,16 +1,3 @@
-:root {
-  --breakpoint-xs: 0;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
-    Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Noto Color Emoji";
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-    monospace;
-}
-
 *,
 *::before,
 *::after {
@@ -157,6 +144,13 @@ h4,
   font-size: 1.5rem;
 }
 
+header {
+  height: 93px;
+  box-sizing: border-box;
+  padding: 0 40px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
 .card {
   position: relative;
   flex-direction: column;
@@ -169,13 +163,6 @@ h4,
 
 .card-title {
   margin-bottom: 0;
-}
-
-header {
-  height: 93px;
-  box-sizing: border-box;
-  padding: 0 40px;
-  border-bottom: 1px solid #f0f0f0;
 }
 
 .purchase-list__item + .purchase-list__item {
