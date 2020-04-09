@@ -192,6 +192,11 @@ tr {
   src: url("../assets/OpenSans-Light.woff2");
 }
 
+@font-face {
+  font-family: OpenSans;
+  src: url("../assets/OpenSans.woff2");
+}
+
 body {
   line-height: 1;
 }
@@ -461,7 +466,7 @@ footer {
   font-weight: 400;
   height: 107px;
   line-height: 104px;
-  font-family: "Open Sans";
+  font-family: OpenSans;
 }
 
 .card_size_s {
