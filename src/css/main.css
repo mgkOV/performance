@@ -193,8 +193,10 @@ tr {
 }
 
 @font-face {
-  font-family: OpenSans;
-  src: url("../assets/OpenSans.woff2");
+  font-family: "Open Sans";
+  src: url("../assets/subset-OpenSans-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
@@ -466,7 +468,7 @@ footer {
   font-weight: 400;
   height: 107px;
   line-height: 104px;
-  font-family: OpenSans;
+  font-family: "Open Sans";
 }
 
 .card_size_s {
