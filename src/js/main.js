@@ -1,9 +1,6 @@
 "use strict";
 
 window.addEventListener("DOMContentLoaded", function () {
-  // var carousel = $("#carousel");
-  // carousel.owlCarousel();
-
   const buttonsContainer = document.querySelector(".buttons-wrap");
 
   buttonsContainer.innerHTML =
