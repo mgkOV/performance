@@ -1,14 +1,14 @@
 "use strict";
 
 $(document).ready(function () {
-  var carousel = $("#carousel");
-  carousel.owlCarousel();
+  // var carousel = $("#carousel");
+  // carousel.owlCarousel();
 
   const buttonsContainer = document.querySelector(".buttons-wrap");
 
-  // buttonsContainer.innerHTML =
-  //   '<button class="button button_yellow" type="button">Да</button>' +
-  //   '<button class="button">Нет</button>';
+  buttonsContainer.innerHTML =
+    '<button class="button button_yellow" type="button">Да</button>' +
+    '<button class="button">Нет</button>';
 
   const fridgeInfoContainer = document.querySelector(".card_size_m:nth-child(8) .card-description");
   const purchaseListContainer = document.querySelector(
