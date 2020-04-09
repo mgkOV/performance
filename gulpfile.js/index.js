@@ -3,7 +3,7 @@ const browserSync = require("browser-sync").create("server");
 
 const css = require("./tasks/css");
 const html = require("./tasks/html");
-const svg = require("./tasks/svg");
+// const svg = require("./tasks/svg");
 const javascript = require("./tasks/javascript");
 
 function watch() {
@@ -22,6 +22,6 @@ function watch() {
 }
 
 module.exports = {
-  build: gulp.series(javascript, html, css, svg),
+  build: gulp.series(javascript, html, css),
   watch
 };
