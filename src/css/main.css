@@ -679,13 +679,15 @@ footer {
   .card_size_m {
     grid-column: span 4;
   }
-  .critical-cam {
-    background: url(../img/cam-s.jpg);
-  }
-
+  
   .card,
   .description_critical {
-    background: url("../img/cbg-s.jpg");
+    background: url("../img/cbg-xxs.jpg");
+  }
+
+  .critical-cam {
+    background: url(../img/cam-xxs.jpg);
+  }
   }
 }
 
@@ -698,14 +700,7 @@ footer {
     width: 668px;
   }
 
-  .card,
-  .description_critical {
-    background: url("../img/cbg-xxs.jpg");
-  }
-
-  .critical-cam {
-    background: url(../img/cam-xxs.jpg);
-  }
+  
 }
 
 @media (max-width: 680px) {
