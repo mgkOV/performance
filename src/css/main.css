@@ -679,7 +679,7 @@ footer {
   .card_size_m {
     grid-column: span 4;
   }
-  
+
   .card,
   .description_critical {
     background: url("../img/cbg-xxs.jpg");
@@ -687,7 +687,6 @@ footer {
 
   .critical-cam {
     background: url(../img/cam-xxs.jpg);
-  }
   }
 }
 
@@ -699,8 +698,6 @@ footer {
   .content-heading {
     width: 668px;
   }
-
-  
 }
 
 @media (max-width: 680px) {
