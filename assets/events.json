@@ -1,0 +1,75 @@
+{
+  "events": [
+    "stats",
+    {
+      "type": "info",
+      "title": "Дверь открыта",
+      "source": "Сенсор входной двери",
+      "time": "18:50, Сегодня",
+      "description": null,
+      "icon": "key",
+      "size": "s"
+    },
+    {
+      "type": "info",
+      "title": "Уборка закончена",
+      "source": "Пылесос",
+      "time": "18:45, Сегодня",
+      "description": null,
+      "icon": "robot-cleaner",
+      "size": "s"
+    },
+    {
+      "type": "info",
+      "title": "Новый пользователь",
+      "source": "Роутер",
+      "time": "18:45, Сегодня",
+      "description": null,
+      "icon": "router",
+      "size": "s"
+    },
+    {
+      "type": "info",
+      "title": "Изменен климатический режим",
+      "source": "Сенсор микроклимата",
+      "time": "18:30, Сегодня",
+      "description": "Установлен климатический режим «Фиджи»",
+      "icon": "thermal",
+      "size": "m",
+      "data": {
+        "temperature": 24,
+        "humidity": 80
+      }
+    },
+    {
+      "type": "critical",
+      "title": "Невозможно включить кондиционер",
+      "source": "Кондиционер",
+      "time": "18:21, Сегодня",
+      "description": "В комнате открыто окно, закройте его и повторите попытку",
+      "icon": "ac",
+      "size": "m"
+    },
+    "music",
+    "fridge",
+    {
+      "type": "info",
+      "title": "Зарядка завершена",
+      "source": "Оконный сенсор",
+      "time": "16:22, Сегодня",
+      "description": "Ура! Устройство «Оконный сенсор» снова в строю!",
+      "icon": "battery",
+      "size": "s"
+    },
+    "cam",
+    {
+      "type": "info",
+      "title": "Вода вскипела",
+      "source": "Чайник",
+      "time": "16:20, Сегодня",
+      "description": null,
+      "icon": "kettle",
+      "size": "s"
+    }
+  ]
+}
