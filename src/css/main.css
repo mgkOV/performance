@@ -701,7 +701,11 @@ footer {
 
 @media (max-width: 680px) {
   .critical-cam {
-    background: url(../img/cam-xs.jpg);
+    background: url(../img/cam-xxs.jpg);
+  }
+
+  .critical-cam {
+    background: url(../img/cam-xxs.jpg);
   }
 
   .content {
