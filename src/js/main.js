@@ -32,12 +32,9 @@ const events = [
     time: "18:30, Сегодня",
     description: "Установлен климатический режим «Фиджи»",
     icon: "thermal",
-    size: "m",
-    data: {
-      temperature: 24,
-      humidity: 80
-    }
+    size: "m"
   },
+
   {
     type: "critical",
     title: "Невозможно включить кондиционер",
@@ -45,6 +42,15 @@ const events = [
     time: "18:21, Сегодня",
     description: "В комнате открыто окно, закройте его и повторите попытку",
     icon: "ac",
+    size: "m"
+  },
+  {
+    type: "info",
+    title: "Музыка включена",
+    source: "Яндекс.Станция",
+    time: "18:16, Сегодня",
+    description: "Сейчас проигрывается:",
+    icon: "music",
     size: "m"
   },
   {
@@ -67,8 +73,19 @@ const events = [
   }
 ];
 
-function templater({ title, icon, time, source, description, size, data, type }) {
+function templater({ title, icon, time, source, description, size, type }) {
   const critical = type === "critical";
+  let cardData = "";
+  if (icon === "thermal") {
+    cardData =
+      '<div class="card-data card-data_climat"> <div class="climat-block"> Температура: <em class="climat-block_data climat-block_data__temp">24 C</em> </div><div class="climat-block hum-block"> Влажность: <em class="climat-block_data climat-block_data__hum">80%</em> </div></div>';
+  }
+
+  if (icon === "music") {
+    cardData =
+      '<div class="card-data card-data_music"> <div class="song-area"> <div class="cover-wrap"> <img class="cover" src="https://avatars.yandex.net/get-music-content/193823/1820a43e.a.5517056-1/m50x50"/> </div><div class="song-data"> <h4 class="song-title">Florence &amp; The Machine - Big God</h4> <div class="song-timeline-wrap"> <input type="range" class="song-range" name="song-range" min="0" max="100" value="" step="1"/> <div class="song-length">4:31</div></div></div></div><div class="player-controls"> <button class="player-control player-control_prev"> <img src="img/Prev.svg"/> </button> <button class="player-control player-control_next"> <img src="img/Prev.svg"/> </button> <input type="range" class="volume-range" name="volume-range" min="0" max="100" value="50" step="1"/> <div class="song-volume">80%</div></div></div>';
+  }
+
   return `<div class="card card_size_${size} ${critical ? "critical" : ""}">
             <div class="card-heading ${critical ? "heading-critical" : ""}">
               <div class="card-icon-wrap">
@@ -89,18 +106,7 @@ function templater({ title, icon, time, source, description, size, data, type })
             </p>`
                 : ""
             }
-            ${
-              data
-                ? `<div class="card-data card-data_climat">
-              <div class="climat-block">
-                Температура: <em class="climat-block_data climat-block_data__temp">24 C</em>
-              </div>
-              <div class="climat-block hum-block">
-                Влажность: <em class="climat-block_data climat-block_data__hum">80%</em>
-              </div>
-            </div>`
-                : ""
-            }
+            ${cardData}
           </div>`;
 }
 
