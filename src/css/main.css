@@ -679,14 +679,13 @@ footer {
   .card_size_m {
     grid-column: span 4;
   }
+  .critical-cam {
+    background: url("../img/cam-xxs.jpg");
+  }
 
   .card,
   .description_critical {
     background: url("../img/cbg-xxs.jpg");
-  }
-
-  .critical-cam {
-    background: url(../img/cam-xxs.jpg);
   }
 }
 
