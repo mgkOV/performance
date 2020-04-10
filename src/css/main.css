@@ -697,9 +697,7 @@ footer {
   .content-heading {
     width: 668px;
   }
-}
 
-@media (max-width: 680px) {
   .card,
   .description_critical {
     background: url("../img/cbg-xxs.jpg");
@@ -708,7 +706,9 @@ footer {
   .critical-cam {
     background: url(../img/cam-xxs.jpg);
   }
+}
 
+@media (max-width: 680px) {
   .content {
     width: 335px;
     grid-template-columns: repeat(6, 1fr);
