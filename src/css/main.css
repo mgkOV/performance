@@ -700,6 +700,10 @@ footer {
 }
 
 @media (max-width: 680px) {
+  .critical-cam {
+    background: url(../img/cam-xs.jpg);
+  }
+
   .content {
     width: 335px;
     grid-template-columns: repeat(6, 1fr);
