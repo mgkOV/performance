@@ -4,7 +4,7 @@ const htmlmin = require("gulp-htmlmin");
 function html() {
   return gulp
     .src("./src/*.html")
-    .pipe(htmlmin({ collapseWhitespace: true, conservativeCollapse: true }))
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest(`./`));
 }
 
