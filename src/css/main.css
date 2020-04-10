@@ -700,8 +700,9 @@ footer {
 }
 
 @media (max-width: 680px) {
-  .critical-cam {
-    background: url(../img/cam-xxs.jpg);
+  .card,
+  .description_critical {
+    background: url("../img/cbg-xxs.jpg");
   }
 
   .critical-cam {
