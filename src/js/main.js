@@ -25,7 +25,28 @@ const events = [
     icon: "router",
     size: "s"
   },
-
+  {
+    type: "info",
+    title: "Изменен климатический режим",
+    source: "Сенсор микроклимата",
+    time: "18:30, Сегодня",
+    description: "Установлен климатический режим «Фиджи»",
+    icon: "thermal",
+    size: "m",
+    data: {
+      temperature: 24,
+      humidity: 80
+    }
+  },
+  {
+    type: "critical",
+    title: "Невозможно включить кондиционер",
+    source: "Кондиционер",
+    time: "18:21, Сегодня",
+    description: "В комнате открыто окно, закройте его и повторите попытку",
+    icon: "ac",
+    size: "m"
+  },
   {
     type: "info",
     title: "Зарядка завершена",
@@ -46,23 +67,38 @@ const events = [
   }
 ];
 
-function templater({ title, icon, time, source, description }) {
-  return `<div class="card card_size_s">
-            <div class="card-heading">
+function templater({ title, icon, time, source, description, size, data, type }) {
+  const critical = type === "critical";
+  return `<div class="card card_size_${size} ${critical ? "critical" : ""}">
+            <div class="card-heading ${critical ? "heading-critical" : ""}">
               <div class="card-icon-wrap">
                 <img class="card-icon" src="img/${icon}.svg" />
               </div>
               <h3 class="card-title">${title}</h3>
             </div>
-            <div class="card-specs">
+            <div class="card-specs ${critical ? "specs-critical" : ""}">
               <p class="card-source">${source}</p>
-              <p class="card-time card-time_block">${time}</p>
+              <p class="card-time ${size === "s" ? "card-time_block" : ""}">${time}</p>
             </div>
             ${
               description
-                ? `<p class="card-description card-description_big description_critical">
+                ? `<p class="card-description card-description_big ${
+                    icon === "thermal" ? "" : "description_critical"
+                  }">
               ${description}
             </p>`
+                : ""
+            }
+            ${
+              data
+                ? `<div class="card-data card-data_climat">
+              <div class="climat-block">
+                Температура: <em class="climat-block_data climat-block_data__temp">24 C</em>
+              </div>
+              <div class="climat-block hum-block">
+                Влажность: <em class="climat-block_data climat-block_data__hum">80%</em>
+              </div>
+            </div>`
                 : ""
             }
           </div>`;
