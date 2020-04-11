@@ -439,7 +439,7 @@ footer {
 }
 
 .card {
-  background: url("../img/cbg.jpg");
+  background: #ececec;
   color: #333;
   border-radius: 20px;
   box-sizing: border-box;
@@ -509,7 +509,7 @@ footer {
 }
 
 .description_critical {
-  background: url("../img/cbg.jpg");
+  background: #ececec;
   color: #000;
   border-radius: 20px;
   margin-top: -20px;
@@ -683,10 +683,10 @@ footer {
     background: url("../img/cam-xxs.jpg");
   }
 
-  .card,
+  /* .card,
   .description_critical {
     background: url("../img/cbg-xxs.jpg");
-  }
+  } */
 }
 
 @media (max-width: 1030px) {
@@ -704,10 +704,10 @@ footer {
     background: url("../img/cam-4xs.jpg");
   }
 
-  .card,
+  /* .card,
   .description_critical {
     background: url("../img/cbg-4xs.jpg");
-  }
+  } */
 
   .content {
     width: 335px;
