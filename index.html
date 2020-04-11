@@ -12,20 +12,12 @@
             content.appendChild(temlate.content);
           });
 
-          const buttonsContainer = document.querySelector(".buttons-wrap");
-
-          const fridgeInfoContainer = document.querySelector(
-            ".card_size_m:nth-child(8) .card-description"
-          );
-          const purchaseListContainer = document.querySelector(
-            ".card_size_m:nth-child(8) .purchase-list-wrap"
-          );
-          const confirmPurchaseButton = document.querySelector(".buttons-wrap .button_yellow");
-
-          confirmPurchaseButton.onclick = () => {
-            fridgeInfoContainer.style.display = "none";
-            purchaseListContainer.style.display = "block";
-            buttonsContainer.style.display = "none";
+          document.querySelector(".buttons-wrap .button_yellow").onclick = () => {
+            document.querySelector(".card_size_m:nth-child(8) .card-description").style.display =
+              "none";
+            document.querySelector(".card_size_m:nth-child(8) .purchase-list-wrap").style.display =
+              "block";
+            document.querySelector(".buttons-wrap").style.display = "none";
           };
         })
         .catch((e) => console.log(e));
