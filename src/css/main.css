@@ -55,23 +55,12 @@ header {
   background: url("../img/checked.svg");
 }
 
-a,
-body,
-div,
 em,
 footer,
-h2,
 h3,
 h4,
-html,
-img,
-menu,
 ol,
-p,
-table,
-tbody,
-td,
-tr {
+p {
   margin: 0;
   padding: 0;
   border: 0;
@@ -98,187 +87,6 @@ html {
   overflow: scroll;
   line-height: 1;
   font-family: Arial;
-}
-
-input[type="range"] {
-  -webkit-appearance: none;
-}
-
-input[type="range"]:focus {
-  outline: 0;
-}
-
-input[type="range"].song-range::-webkit-slider-thumb,
-input[type="range"].volume-range::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  border: none;
-  height: 20px;
-  width: 12px;
-  border-radius: 4.5px;
-  background: #d8d8d8;
-  cursor: pointer;
-  margin-top: -8px;
-  box-shadow: none;
-}
-
-input[type="range"].volume-range::-webkit-slider-thumb {
-  /* -webkit-appearance: none;
-  border: none;
-  cursor: pointer;
-  box-shadow: none; */
-  height: 16px;
-  width: 16px;
-  border-radius: 26px;
-  background: #605757;
-  margin-top: -6px;
-}
-
-input[type="range"].song-range::-moz-range-thumb,
-input[type="range"].volume-range::-moz-range-thumb {
-  -webkit-appearance: none;
-  border: none;
-  height: 20px;
-  width: 12px;
-  border-radius: 4.5px;
-  background: #d8d8d8;
-  cursor: pointer;
-  box-shadow: none;
-}
-
-input[type="range"].volume-range::-moz-range-thumb {
-  /* -webkit-appearance: none;
-  border: none;
-  cursor: pointer;
-  box-shadow: none; */
-  height: 16px;
-  width: 16px;
-  border-radius: 26px;
-  background: #605757;
-}
-
-input[type="range"].song-range::-ms-thumb,
-input[type="range"].volume-range::-ms-thumb {
-  -webkit-appearance: none;
-  border: none;
-  height: 20px;
-  width: 12px;
-  border-radius: 4.5px;
-  background: #d8d8d8;
-  cursor: pointer;
-  box-shadow: none;
-}
-
-input[type="range"].volume-range::-ms-thumb {
-  /* -webkit-appearance: none;
-  border: none;
-  cursor: pointer;
-  box-shadow: none; */
-  height: 16px;
-  width: 16px;
-  border-radius: 26px;
-  background: #605757;
-}
-
-input[type="range"].song-range::-webkit-slider-runnable-track,
-input[type="range"].volume-range::-webkit-slider-runnable-track {
-  width: 100%;
-  border: none;
-  cursor: pointer;
-  box-shadow: none;
-  height: 1px;
-  background: #979797;
-  border-radius: none;
-}
-
-input[type="range"].volume-range::-webkit-slider-runnable-track {
-  /* width: 100%;
-  cursor: pointer;
-  box-shadow: none;
-  border: none; */
-
-  height: 4px;
-  background: rgba(216, 216, 216, 0.3);
-  border-radius: 2px;
-}
-
-input[type="range"].song-range:focus::-webkit-slider-runnable-track {
-  background: #979797;
-}
-
-input[type="range"].volume-range:focus::-webkit-slider-runnable-track {
-  background: rgba(216, 216, 216, 0.3);
-}
-
-input[type="range"].song-range::-moz-range-track,
-input[type="range"].volume-range::-moz-range-track {
-  width: 100%;
-  height: 1px;
-  cursor: pointer;
-  box-shadow: none;
-  background: #979797;
-  border-radius: none;
-  border: none;
-}
-
-input[type="range"].volume-range::-moz-range-track {
-  /* width: 100%;
-  border: none;
-  box-shadow: none;
-  cursor: pointer; */
-
-  height: 4px;
-  background: rgba(216, 216, 216, 0.3);
-  border-radius: 2px;
-}
-
-input[type="range"]::-ms-track {
-  background: 0 0;
-  border-color: transparent;
-  color: transparent;
-}
-
-input[type="range"].song-range::-ms-track,
-input[type="range"].volume-range::-ms-track {
-  width: 100%;
-  height: 1px;
-  cursor: pointer;
-  box-shadow: none;
-  background: #979797;
-  border-radius: none;
-  border: none;
-}
-
-input[type="range"].volume-range::-ms-track {
-  /* width: 100%;
-  border: none;
-  cursor: pointer;
-  box-shadow: none; */
-
-  height: 4px;
-  background: rgba(216, 216, 216, 0.3);
-  border-radius: 2px;
-}
-
-input[type="range"]::-ms-fill-lower {
-  background: #2a6495;
-  border: 0.2px solid #010101;
-  border-radius: 2.6px;
-  box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d;
-}
-
-input[type="range"]:focus::-ms-fill-lower {
-  background: #3071a9;
-}
-
-input[type="range"]::-ms-fill-upper {
-  background: #3071a9;
-  border: 0.2px solid #010101;
-  border-radius: 2.6px;
-  box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d;
-}
-
-input[type="range"]:focus::-ms-fill-upper {
-  background: #367ebd;
 }
 
 body,
@@ -614,6 +422,187 @@ footer {
 
 .button_yellow {
   background: rgba(255, 217, 62, 1);
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+}
+
+input[type="range"]:focus {
+  outline: 0;
+}
+
+input[type="range"].song-range::-webkit-slider-thumb,
+input[type="range"].volume-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 20px;
+  width: 12px;
+  border-radius: 4.5px;
+  background: #d8d8d8;
+  cursor: pointer;
+  margin-top: -8px;
+  box-shadow: none;
+}
+
+input[type="range"].volume-range::-webkit-slider-thumb {
+  /* -webkit-appearance: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: none; */
+  height: 16px;
+  width: 16px;
+  border-radius: 26px;
+  background: #605757;
+  margin-top: -6px;
+}
+
+input[type="range"].song-range::-moz-range-thumb,
+input[type="range"].volume-range::-moz-range-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 20px;
+  width: 12px;
+  border-radius: 4.5px;
+  background: #d8d8d8;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+input[type="range"].volume-range::-moz-range-thumb {
+  /* -webkit-appearance: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: none; */
+  height: 16px;
+  width: 16px;
+  border-radius: 26px;
+  background: #605757;
+}
+
+input[type="range"].song-range::-ms-thumb,
+input[type="range"].volume-range::-ms-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 20px;
+  width: 12px;
+  border-radius: 4.5px;
+  background: #d8d8d8;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+input[type="range"].volume-range::-ms-thumb {
+  /* -webkit-appearance: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: none; */
+  height: 16px;
+  width: 16px;
+  border-radius: 26px;
+  background: #605757;
+}
+
+input[type="range"].song-range::-webkit-slider-runnable-track,
+input[type="range"].volume-range::-webkit-slider-runnable-track {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  box-shadow: none;
+  height: 1px;
+  background: #979797;
+  border-radius: none;
+}
+
+input[type="range"].volume-range::-webkit-slider-runnable-track {
+  /* width: 100%;
+  cursor: pointer;
+  box-shadow: none;
+  border: none; */
+
+  height: 4px;
+  background: rgba(216, 216, 216, 0.3);
+  border-radius: 2px;
+}
+
+input[type="range"].song-range:focus::-webkit-slider-runnable-track {
+  background: #979797;
+}
+
+input[type="range"].volume-range:focus::-webkit-slider-runnable-track {
+  background: rgba(216, 216, 216, 0.3);
+}
+
+input[type="range"].song-range::-moz-range-track,
+input[type="range"].volume-range::-moz-range-track {
+  width: 100%;
+  height: 1px;
+  cursor: pointer;
+  box-shadow: none;
+  background: #979797;
+  border-radius: none;
+  border: none;
+}
+
+input[type="range"].volume-range::-moz-range-track {
+  /* width: 100%;
+  border: none;
+  box-shadow: none;
+  cursor: pointer; */
+
+  height: 4px;
+  background: rgba(216, 216, 216, 0.3);
+  border-radius: 2px;
+}
+
+input[type="range"]::-ms-track {
+  background: 0 0;
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type="range"].song-range::-ms-track,
+input[type="range"].volume-range::-ms-track {
+  width: 100%;
+  height: 1px;
+  cursor: pointer;
+  box-shadow: none;
+  background: #979797;
+  border-radius: none;
+  border: none;
+}
+
+input[type="range"].volume-range::-ms-track {
+  /* width: 100%;
+  border: none;
+  cursor: pointer;
+  box-shadow: none; */
+
+  height: 4px;
+  background: rgba(216, 216, 216, 0.3);
+  border-radius: 2px;
+}
+
+input[type="range"]::-ms-fill-lower {
+  background: #2a6495;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d;
+}
+
+input[type="range"]:focus::-ms-fill-lower {
+  background: #3071a9;
+}
+
+input[type="range"]::-ms-fill-upper {
+  background: #3071a9;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d;
+}
+
+input[type="range"]:focus::-ms-fill-upper {
+  background: #367ebd;
 }
 
 @media (max-width: 1230px) {
