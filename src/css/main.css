@@ -1,61 +1,7 @@
-html {
-  overflow: scroll;
-}
-
-/* *,
-*::before,
-*::after {
-  box-sizing: border-box;
-} */
-
-/* footer,
-header,
-menu {
-  display: block;
-} */
-
-/* h2,
-h3,
-h4 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-} */
-
-/* p {
-  margin-top: 0;
-  margin-bottom: 1rem;
-} */
-
-/* a {
-  text-decoration: none;
-} */
-
 a:not([href]):not([tabindex]) {
   color: inherit;
   text-decoration: none;
 }
-
-/* img {
-  vertical-align: middle;
-  border-style: none;
-} */
-
-/* svg {
-  overflow: hidden;
-  vertical-align: middle;
-} */
-
-/* button,
-input {
-  overflow: visible;
-} */
-
-/* button:not(:disabled),
-[type="button"]:not(:disabled),
-[type="reset"]:not(:disabled),
-[type="submit"]:not(:disabled) {
-  cursor: pointer;
-} */
 
 header {
   height: 93px;
@@ -84,6 +30,7 @@ header {
 
 .purchase-list {
   padding: 0 40px;
+  list-style: none;
 }
 
 .purchase-list-wrap {
@@ -147,13 +94,10 @@ tr {
   font-style: normal;
 }
 
-body {
+html {
+  overflow: scroll;
   line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
+  font-family: Arial;
 }
 
 input[type="range"] {
@@ -339,7 +283,6 @@ input[type="range"]:focus::-ms-fill-upper {
 
 body,
 html {
-  font-family: Arial;
   padding: 0;
   margin: 0;
   height: 100%;
