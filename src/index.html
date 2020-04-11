@@ -74,14 +74,6 @@
             temlate.innerHTML = tmp;
             content.appendChild(temlate.content);
           });
-
-          document.querySelector(".buttons-wrap .button_yellow").onclick = () => {
-            document.querySelector(".card_size_m:nth-child(8) .card-description").style.display =
-              "none";
-            document.querySelector(".card_size_m:nth-child(8) .purchase-list-wrap").style.display =
-              "block";
-            document.querySelector(".buttons-wrap").style.display = "none";
-          };
         })
         .catch((e) => console.log(e));
 
